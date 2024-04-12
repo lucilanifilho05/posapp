@@ -1,0 +1,24 @@
+<h1>Lista de Postagens</h1>
+
+<div class="card">
+    <div class="card-body">
+
+        {{#each posts}}
+
+            <h1>{{titulo}}</h1> <br>
+            <p>{{conteudo}}</p>
+            <a href="editar/{{id}}"><button class="btn btn-warning">Editar Dados</button></a>
+            <a href="/deletar/{{id}}"><button class="btn btn-danger">Excluir Postagem</button></a>
+
+
+            <hr>
+
+        {{/each}}
+
+        <br><br>
+
+        <a href="/cad"><button class="btn btn-success">Cadastrar Postagem</button></a>
+
+
+    </div>
+</div>
